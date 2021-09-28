@@ -11,7 +11,7 @@ Used Techs and Languages:
 - Flexbox (frow)
 - Pure Javascript
 
-Note: No external libraries or Jquery used in this project.
+Note: No external libraries or Jquery or Jquery plugin used in this project.
 
 Original behance design link: https://www.behance.net/gallery/127934871/Smart-Web-Design-Agency-Landing-page-Design
 Design owners: Ariba Yeasmin, Pixency Academy
