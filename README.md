@@ -7,7 +7,8 @@ I'm not a graphics guy. So I skipped graphics work like Shapes and Images that a
 
 Used Techs and Languages:
 - HTML
-- CSS
+- SCSS
+- Flexbox (frow)
 - Pure Javascript
 
 Note: No external libraries or Jquery used in this project.
