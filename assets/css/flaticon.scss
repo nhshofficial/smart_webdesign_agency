@@ -1,0 +1,41 @@
+$flaticon-font: "flaticon";
+
+@font-face {
+    font-family: $flaticon-font;
+    src: url("../font/flaticon.ttf?cdfc915243d8deb5f6c7621ee6f9a283") format("truetype"),
+url("../font/flaticon.woff?cdfc915243d8deb5f6c7621ee6f9a283") format("woff"),
+url("../font/flaticon.woff2?cdfc915243d8deb5f6c7621ee6f9a283") format("woff2"),
+url("../font/flaticon.eot?cdfc915243d8deb5f6c7621ee6f9a283#iefix") format("embedded-opentype"),
+url("../font/flaticon.svg?cdfc915243d8deb5f6c7621ee6f9a283#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon-map: (
+    "instagram": "\f101",
+    "twitter": "\f102",
+    "facebook": "\f103",
+    "youtube": "\f104",
+);
+
+.flaticon-instagram:before {
+    content: map-get($flaticon-map, "instagram");
+}
+.flaticon-twitter:before {
+    content: map-get($flaticon-map, "twitter");
+}
+.flaticon-facebook:before {
+    content: map-get($flaticon-map, "facebook");
+}
+.flaticon-youtube:before {
+    content: map-get($flaticon-map, "youtube");
+}

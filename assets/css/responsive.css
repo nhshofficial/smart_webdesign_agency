@@ -1,0 +1,70 @@
+/* XS */
+@media (max-width: 767px) {
+  .menu-btn {
+    display: block;
+  }
+}
+/* XS, SM */
+@media (max-width: 991px) {
+  .nav-collapse a {
+    background-color: #0a2737;
+    color: #ffffff;
+  }
+
+  .nav-collapse a:hover,
+.nav-collapse li.focus > a {
+    background-color: #071d29;
+  }
+
+  .dropdown ul a {
+    background-color: #071d29;
+  }
+
+  .dropdown ul ul a {
+    background-color: #071d29;
+  }
+}
+/* SM */
+/* MD */
+/* MD, LG */
+@media (min-width: 992px) {
+  .menu-btn {
+    display: none;
+  }
+}
+/* LG */
+@media (min-width: 768px) {
+  .frow-container-fluid {
+    max-width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .frow-container-fluid {
+    max-width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .frow-container-fluid {
+    max-width: 1170px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 7680px) {
+  .menu-items > li > a {
+    position: relative;
+  }
+
+  .menu-items > li > a::before {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    transition: 0.4s;
+  }
+
+  .menu-items > li:hover > a::before {
+    width: 100%;
+    background-color: #333333;
+  }
+}/*# sourceMappingURL=responsive.css.map */

@@ -1,0 +1,99 @@
+// var colors
+
+$menuBackgroundColor: #0a2737; // background menu item
+$menuLinkColor: #ffffff; // a color
+$menuBackgroundColorHover: #071d29; // menu hover a
+$menuBackgroundColorDropdownLevel1: #071d29; // dropdown a
+$menuBackgroundColorDropdownLevel2: #071d29; // dropdown a
+$menuHoverBottomBorderColor: #333333; // border bottom transition color on hover 
+
+
+
+/* XS */
+@media (max-width: 767px) {
+  .menu-btn {
+    display: block;
+  }
+}
+
+/* XS, SM */
+@media (max-width: 991px) {
+  .nav-collapse a {
+    background-color: $menuBackgroundColor;
+    color: $menuLinkColor;
+  }
+  .nav-collapse a:hover,
+  .nav-collapse li.focus > a {
+    background-color: $menuBackgroundColorHover;
+  }
+  .dropdown ul a {
+    background-color: $menuBackgroundColorDropdownLevel1;
+  }
+  .dropdown ul ul a {
+    background-color: $menuBackgroundColorDropdownLevel2;
+  }
+}
+
+/* SM */
+@media (min-width: 768px) and (max-width: 991px) {
+  
+}
+
+/* MD */
+@media (min-width: 992px) and (max-width: 1199px) {
+  
+}
+
+/* MD, LG */
+@media (min-width: 992px) {
+  .menu-btn {
+    display: none;
+  }
+}
+
+/* LG */
+@media (min-width: 1200px) {
+  // .menu-btn {
+  //   display: none;
+  // }
+}
+
+// frow container fluid special
+@media (min-width: 768px) {
+    .frow-container-fluid {
+      max-width: 750px;
+    }
+  }
+  @media (min-width: 992px) {
+    .frow-container-fluid {
+      max-width: 970px;
+    }
+  }
+  @media (min-width: 1200px) {
+    .frow-container-fluid {
+      max-width: 1170px;
+    }
+  }
+
+  // Desktop layout
+  @media only screen and (min-width: 992px) and (max-width: 7680px) { 
+
+    .menu-items > li > a {
+      position: relative;
+    }
+    .menu-items > li > a::before {
+      position: absolute;
+      content: "";
+      width: 0;
+      height: 3px;
+      bottom: 0;
+      left: 0;
+      transition: .4s;
+    }
+    
+    .menu-items > li:hover > a::before{
+      width: 100%;
+      background-color: $menuHoverBottomBorderColor;
+    }
+    
+  }
